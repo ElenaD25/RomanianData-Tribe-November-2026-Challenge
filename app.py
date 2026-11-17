@@ -598,7 +598,7 @@ def breadcrumb(page):
     with c2:
         st.markdown(f'<div class="crumb-rest">›&nbsp; {page["chapter"]}</div>', unsafe_allow_html=True)
     with c3:
-        st.markdown('<div class="crumb-rest" style="text-align:right">THE BLACK FRIDAY EDIT</div>', unsafe_allow_html=True)
+        st.markdown('<div class="crumb-rest" style="text-align:right">THE BLACK FRIDAY EDITION</div>', unsafe_allow_html=True)
 
 def author_footer():
     st.markdown(
@@ -662,7 +662,7 @@ page = PAGES[selected]
 
 if selected == "Cover":
     st.markdown('<div class="eyebrow">ROMANIA · 2023–2026 · SPECIAL DATA EDITION</div>', unsafe_allow_html=True)
-    st.markdown('<div class="masthead">THE BLACK<br>FRIDAY EDIT</div>', unsafe_allow_html=True)
+    st.markdown('<div class="masthead">THE BLACK<br>FRIDAY EDITION</div>', unsafe_allow_html=True)
     st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
     st.markdown(f'<h2 style="font-size:2.1rem; max-width:850px; line-height:1.15">{page["subtitle"]}</h2>', unsafe_allow_html=True)
     st.markdown(f'<p class="deck">{page["intro"]}</p>', unsafe_allow_html=True)
