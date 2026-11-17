@@ -655,7 +655,7 @@ def render_figure(n, spec, page_no):
     st.write("")
 
 # ── Navigation ──────────────────────────────────────────────────────────────
-st.sidebar.markdown('<div class="eyebrow">THE BLACK FRIDAY EDIT</div>', unsafe_allow_html=True)
+st.sidebar.markdown('<div class="eyebrow">THE BLACK FRIDAY EDITION</div>', unsafe_allow_html=True)
 selected = st.sidebar.radio("READ THE ISSUE", list(PAGES.keys()), key="nav")
 st.markdown('<div id="top-anchor" style="scroll-margin-top:5rem"></div><a class="to-top" href="#top-anchor" title="Back to top">↑</a>', unsafe_allow_html=True)
 page = PAGES[selected]
