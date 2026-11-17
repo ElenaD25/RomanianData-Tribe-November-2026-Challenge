@@ -165,7 +165,7 @@ M_WINDOW = "Share of card payments in the 29-day window around BF 2025"
 PAGES = {
     "Cover": {
         "chapter": "SPECIAL DATA EDITION",
-        "title": "THE BLACK FRIDAY EDIT",
+        "title": "THE BLACK FRIDAY EDITION",
         "subtitle": "Are Romanians shopping smarter, or simply shopping more?",
         "intro": "A data-led investigation into the habits, expectations and decisions behind Romania's biggest shopping event.",
     },
