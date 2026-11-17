@@ -47,3 +47,6 @@ The public URL is created by the hosting service; it is not created by running t
 - Every page opens with a KPI strip; each chart sits beside a short written description that carries the narrative.
 - NETOPIA payment indicators are presented separately from MKOR survey indicators.
 - Some metrics only exist for one year; the app does not invent historical values.
+
+## Page preview thumbnails
+The hover thumbnails on the previous/next buttons are static images in `previews/`. After changing page content, regenerate them with `python tools/make_previews.py http://localhost:8501` while the app is running (needs `pip install playwright pillow` and `playwright install chromium`).

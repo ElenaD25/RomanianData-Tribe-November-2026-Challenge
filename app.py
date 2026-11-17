@@ -1,3 +1,4 @@
+import base64
 import textwrap
 from pathlib import Path
 
@@ -74,10 +75,44 @@ h1,h2,h3 {{ font-family: 'Playfair Display', Georgia, serif !important; color: {
 /* Sidebar footer pinned to the bottom of the menu */
 .sb-foot {{ position: fixed; bottom: 1.1rem; left: 1.5rem; width: 16.5rem; color: #000000; font-size: .78rem; line-height: 1.5; }}
 
-/* Profile links under the menu */
-.sb-links {{ margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid #d3c5dd; display: flex; flex-direction: column; gap: .5rem; }}
-.sb-links a {{ color: #000000 !important; text-decoration: none !important; font-weight: 500; font-size: .95rem; background: #FFFFFF; border: 1px solid #ddd1e4; border-left: 3px solid {GOLD}; border-radius: 8px; padding: .5rem .7rem; }}
-.sb-links a:hover {{ background: {PALE}; border-left-color: {VIOLET}; }}
+/* Previous / next buttons at the bottom of each page (text centred, thumbnail on hover) */
+[class*="st-key-pgnav_"] {{ display: flex; width: 100%; }}
+[class*="st-key-pgnav_"][class*="_prev"] {{ justify-content: flex-start; }}
+[class*="st-key-pgnav_"][class*="_next"] {{ justify-content: flex-end; }}
+[class*="st-key-pgnav_"] .stButton {{ width: auto; }}
+[class*="st-key-pgnav_"] button {{ position: relative; overflow: visible !important; width: 300px; max-width: 100%; justify-content: center; text-align: center;
+    background: #FFFFFF; border: 1px solid #cdbfd8; border-radius: 999px; padding: .55rem 1rem; }}
+[class*="st-key-pgnav_"] button > div, [class*="st-key-pgnav_"] button p {{ width: 100%; justify-content: center !important; text-align: center !important; }}
+[class*="st-key-pgnav_"] button p {{ color: {PLUM}; font-weight: 600; font-size: .9rem; line-height: 1.3; }}
+[class*="st-key-pgnav_"] button:hover {{ background: {PALE}; border-color: {VIOLET}; }}
+[class*="st-key-pgnav_"][class*="_next"] button {{ background: {PLUM}; border-color: {PLUM}; }}
+[class*="st-key-pgnav_"][class*="_next"] button p {{ color: {IVORY}; }}
+[class*="st-key-pgnav_"][class*="_next"] button:hover {{ background: {VIOLET}; border-color: {VIOLET}; }}
+[class*="st-key-pgnav_"] button::after {{ content: ""; position: absolute; bottom: calc(100% + 14px); width: 340px; height: 215px;
+    background-color: #FFFFFF; background-size: cover; background-position: top center; background-repeat: no-repeat;
+    border: 4px solid #FFFFFF; border-radius: 14px; box-shadow: 0 10px 30px rgba(48,33,63,.30), 0 0 0 1px #d9cce2;
+    opacity: 0; transform: translateY(8px); transition: opacity .18s ease, transform .18s ease; pointer-events: none; z-index: 10000; }}
+[class*="st-key-pgnav_"][class*="_prev"] button::after {{ left: 0; }}
+[class*="st-key-pgnav_"][class*="_next"] button::after {{ right: 0; }}
+[class*="st-key-pgnav_"] button:hover::after {{ opacity: 1; transform: translateY(0); }}
+
+/* Breadcrumb */
+[class*="st-key-crumb_"] button {{ background: transparent; border: none; padding: 0; min-height: 0; box-shadow: none; }}
+[class*="st-key-crumb_"] button p {{ color: {VIOLET}; letter-spacing: .16em; font-size: .72rem; font-weight: 700; text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; }}
+[class*="st-key-crumb_"] button:hover p {{ color: {PLUM}; }}
+[class*="st-key-crumb_"] button p {{ margin: 0; line-height: 1.2; }}
+.crumb-rest {{ line-height: 1.2; color: {VIOLET}; letter-spacing: .16em; font-size: .72rem; font-weight: 700; text-transform: uppercase; }}
+
+/* Footer with profile links */
+.author-footer {{ background: {PLUM}; border-radius: 18px; padding: 1.6rem 1.8rem; margin-top: 2.2rem; color: {IVORY}; }}
+.author-footer .af-eyebrow {{ color: {GOLD}; letter-spacing: .16em; font-size: .72rem; font-weight: 700; text-transform: uppercase; }}
+.author-footer .af-title {{ font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; line-height: 1.25; margin: .4rem 0 .4rem; color: {IVORY}; font-weight: 600; }}
+.author-footer .af-text {{ color: #d9cce2; font-size: .95rem; line-height: 1.6; max-width: 720px; }}
+.author-footer .af-links {{ display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.1rem; }}
+.author-footer a {{ background: {GOLD}; color: {PLUM} !important; font-weight: 700; text-decoration: none !important; border-radius: 999px; padding: .65rem 1.3rem; font-size: .95rem; transition: transform .15s ease, background .15s ease; }}
+.author-footer a:hover {{ background: #E6CD94; transform: translateY(-2px); }}
+.author-footer a.alt {{ background: transparent; color: {IVORY} !important; border: 1.5px solid {GOLD}; }}
+.author-footer a.alt:hover {{ background: rgba(213,183,121,.18); }}
 
 /* Back-to-top button */
 a.to-top {{ position: fixed; right: 1.6rem; bottom: 1.6rem; z-index: 9999; width: 46px; height: 46px; border-radius: 50%;
@@ -523,6 +558,61 @@ def fig_heatmap(data, unit, height):
 
 def go_to(page_name):
     st.session_state["nav"] = page_name
+    st.session_state["scroll_top"] = True
+
+PREVIEW_DIR = Path(__file__).parent / "previews"
+
+@st.cache_data
+def preview_uri(num):
+    f = PREVIEW_DIR / f"{num}.jpg"
+    if not f.exists():
+        return None
+    return "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
+
+def page_nav(selected):
+    """Previous / Next buttons (bottom of the page). Hovering shows a thumbnail of the target page."""
+    names = list(PAGES.keys())
+    i = names.index(selected)
+    css = ""
+    prev_col, next_col = st.columns(2, gap="medium")
+    with prev_col:
+        if i > 1:
+            st.button(f"← {names[i - 1]}", key="pgnav_prev", on_click=go_to, args=(names[i - 1],))
+            uri = preview_uri(names[i - 1][:2])
+            if uri:
+                css += f'.st-key-pgnav_prev button::after {{ background-image: url("{uri}"); }}'
+    with next_col:
+        if i < len(names) - 1:
+            st.button(f"{names[i + 1]} →", key="pgnav_next", on_click=go_to, args=(names[i + 1],))
+            uri = preview_uri(names[i + 1][:2])
+            if uri:
+                css += f'.st-key-pgnav_next button::after {{ background-image: url("{uri}"); }}'
+    if css:
+        st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
+
+def breadcrumb(page):
+    """COVER › 01 / THE BIG STORY  — the cover part is a link back to the cover."""
+    c1, c2, c3 = st.columns([0.8, 6.2, 3], vertical_alignment="center", gap="small")
+    with c1:
+        st.button("⌂ Cover", key="crumb_cover", on_click=go_to, args=(list(PAGES.keys())[0],))
+    with c2:
+        st.markdown(f'<div class="crumb-rest">›&nbsp; {page["chapter"]}</div>', unsafe_allow_html=True)
+    with c3:
+        st.markdown('<div class="crumb-rest" style="text-align:right">THE BLACK FRIDAY EDIT</div>', unsafe_allow_html=True)
+
+def author_footer():
+    st.markdown(
+        '<div class="author-footer">'
+        '<div class="af-eyebrow">Behind the numbers</div>'
+        '<div class="af-title">Liked the story? There is more where it came from.</div>'
+        '<div class="af-text">I\'m Elena-Luchiana Dumitrescu, a data analyst and BI developer. '
+        'Come see the dashboards and projects I build, and read my SQL and analytics articles.</div>'
+        '<div class="af-links">'
+        '<a href="https://www.linkedin.com/in/elena-luchiana-dumitrescu" target="_blank" rel="noopener noreferrer">See my projects on LinkedIn →</a>'
+        '<a class="alt" href="https://medium.com/@luchianadumitrescu" target="_blank" rel="noopener noreferrer">Read my articles on Medium →</a>'
+        '</div></div>',
+        unsafe_allow_html=True,
+    )
 
 def build_fig(spec):
     data = df[df["metric"].eq(spec["metric"])].copy()
@@ -567,12 +657,6 @@ def render_figure(n, spec, page_no):
 # ── Navigation ──────────────────────────────────────────────────────────────
 st.sidebar.markdown('<div class="eyebrow">THE BLACK FRIDAY EDIT</div>', unsafe_allow_html=True)
 selected = st.sidebar.radio("READ THE ISSUE", list(PAGES.keys()), key="nav")
-st.sidebar.markdown(
-    '<div class="sb-links"><div class="eyebrow">FOLLOW MY WORK</div>'
-    '<a href="https://www.linkedin.com/in/elena-luchiana-dumitrescu" target="_blank" rel="noopener noreferrer">in&nbsp; LinkedIn · my projects</a>'
-    '<a href="https://medium.com/@luchianadumitrescu" target="_blank" rel="noopener noreferrer">M&nbsp; Medium · my articles</a></div>',
-    unsafe_allow_html=True,
-)
 st.markdown('<div id="top-anchor" style="scroll-margin-top:5rem"></div><a class="to-top" href="#top-anchor" title="Back to top">↑</a>', unsafe_allow_html=True)
 page = PAGES[selected]
 
@@ -602,7 +686,7 @@ if selected == "Cover":
     st.info("Click a chapter above, or use the left navigation, to start reading.")
 else:
     page_no = selected[:2]
-    st.markdown(f'<div class="eyebrow">{page["chapter"]} <span style="float:right">THE BLACK FRIDAY EDIT</span></div>', unsafe_allow_html=True)
+    breadcrumb(page)
     st.title(page["title"])
     st.markdown(f'<p class="deck">{page["subtitle"]}</p>', unsafe_allow_html=True)
     st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
@@ -619,5 +703,19 @@ else:
         st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
         st.markdown('<div class="eyebrow">THE EDITORIAL TAKE</div>', unsafe_allow_html=True)
         st.markdown(f'<div class="pullquote">{page["take"]}</div>', unsafe_allow_html=True)
+
+    st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
+    page_nav(selected)
+
+author_footer()
+
+if st.session_state.pop("scroll_top", False):
+    import streamlit.components.v1 as components
+    components.html(
+        "<script>const d=window.parent.document;"
+        "for(const sel of ['[data-testid=\"stMain\"]','section.main','[data-testid=\"stAppViewContainer\"]']){"
+        "const e=d.querySelector(sel); if(e) e.scrollTo({top:0,behavior:'instant'});}</script>",
+        height=0,
+    )
 
 st.sidebar.markdown('<div class="sb-foot">An editorial data experience · Built with Python + Streamlit</div>', unsafe_allow_html=True)
