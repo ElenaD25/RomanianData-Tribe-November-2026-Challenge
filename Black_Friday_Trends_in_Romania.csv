@@ -1,0 +1,186 @@
+row_id,theme,metric,segment,year,value,unit,base_n,source,slide,note
+1,Purchase intent,Share of respondents by BF purchase intention (November),Buyers (intend to buy),2023,57.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+2,Purchase intent,Share of respondents by BF purchase intention (November),Buyers (intend to buy),2024,57.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+3,Purchase intent,Share of respondents by BF purchase intention (November),Buyers (intend to buy),2025,62.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+4,Purchase intent,Share of respondents by BF purchase intention (November),Buyers (intend to buy),2026,70.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+5,Purchase intent,Share of respondents by BF purchase intention (November),Undecided,2023,34.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+6,Purchase intent,Share of respondents by BF purchase intention (November),Undecided,2024,31.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+7,Purchase intent,Share of respondents by BF purchase intention (November),Undecided,2025,28.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+8,Purchase intent,Share of respondents by BF purchase intention (November),Undecided,2026,24.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+9,Purchase intent,Share of respondents by BF purchase intention (November),Non-buyers,2023,7.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+10,Purchase intent,Share of respondents by BF purchase intention (November),Non-buyers,2024,10.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+11,Purchase intent,Share of respondents by BF purchase intention (November),Non-buyers,2025,7.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+12,Purchase intent,Share of respondents by BF purchase intention (November),Non-buyers,2026,6.0,%,1000.0,MKOR survey,4,Remainder to 100% = don't know / no answer
+13,Purchase intent,Declared afterwards that they bought (actual purchase),Respondents who rated that year's BF experience,2023,71.0,%,1000.0,MKOR survey,5,"From the following year's wave; base is not identical to the intent question, so intent vs. reality is indicative"
+14,Purchase intent,Declared afterwards that they bought (actual purchase),Respondents who rated that year's BF experience,2024,77.0,%,1000.0,MKOR survey,5,"From the following year's wave; base is not identical to the intent question, so intent vs. reality is indicative"
+15,Purchase intent,Declared afterwards that they bought (actual purchase),Respondents who rated that year's BF experience,2025,79.0,%,1000.0,MKOR survey,5,"From the following year's wave; base is not identical to the intent question, so intent vs. reality is indicative"
+16,Purchase motives,Main motives to shop at Black Friday (buyers),Wishlist (long-watched products at better prices),2023,56.0,%,569.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+17,Purchase motives,Main motives to shop at Black Friday (buyers),Wishlist (long-watched products at better prices),2024,54.0,%,568.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+18,Purchase motives,Main motives to shop at Black Friday (buyers),Wishlist (long-watched products at better prices),2025,53.0,%,615.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+19,Purchase motives,Main motives to shop at Black Friday (buyers),Wishlist (long-watched products at better prices),2026,54.0,%,615.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+20,Purchase motives,Main motives to shop at Black Friday (buyers),Deal hunters (buy on discount in general),2023,36.0,%,569.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+21,Purchase motives,Main motives to shop at Black Friday (buyers),Deal hunters (buy on discount in general),2024,31.0,%,568.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+22,Purchase motives,Main motives to shop at Black Friday (buyers),Deal hunters (buy on discount in general),2025,31.0,%,615.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+23,Purchase motives,Main motives to shop at Black Friday (buyers),Deal hunters (buy on discount in general),2026,32.0,%,615.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+24,Purchase motives,Main motives to shop at Black Friday (buyers),Christmas gifts bought early,2023,29.0,%,569.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+25,Purchase motives,Main motives to shop at Black Friday (buyers),Christmas gifts bought early,2024,23.0,%,568.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+26,Purchase motives,Main motives to shop at Black Friday (buyers),Christmas gifts bought early,2025,31.0,%,615.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+27,Purchase motives,Main motives to shop at Black Friday (buyers),Christmas gifts bought early,2026,28.0,%,615.0,MKOR survey,8,2026: % computed on 615 of 703 buyers with at least one option common to 2023-2025
+28,Purchase motives,"Main motives, 2026 on full buyer base (incl. new options)",Wishlist (long-watched products at better prices),2026,48.0,%,703.0,MKOR survey,8,Order of the three values (48/28/24) taken from the slide footnote; mapping to motives assumed from listed order
+29,Purchase motives,"Main motives, 2026 on full buyer base (incl. new options)",Deal hunters (buy on discount in general),2026,28.0,%,703.0,MKOR survey,8,Order of the three values (48/28/24) taken from the slide footnote; mapping to motives assumed from listed order
+30,Purchase motives,"Main motives, 2026 on full buyer base (incl. new options)",Christmas gifts bought early,2026,24.0,%,703.0,MKOR survey,8,Order of the three values (48/28/24) taken from the slide footnote; mapping to motives assumed from listed order
+31,Purchase motives,New 2026 motive options,Upgrade,2026,34.0,%,703.0,MKOR survey,8,New answer option in 2026
+32,Purchase motives,New 2026 motive options,Other,2026,3.0,%,703.0,MKOR survey,8,New answer option in 2026
+33,Planning horizon,Average weeks before BF reference date when the shopping list is started,Buyers,2023,3.7,weeks,503.0,MKOR survey,9,"Reference date differs by year (1 Nov 2023, 1 Nov 2024, 7 Nov 2025, 6 Nov 2026); 2026 option '1-3 months' covers 5-8 weeks (no match before); conversion values differ slightly by year. MKOR: compare with caution"
+34,Planning horizon,Average weeks before BF reference date when the shopping list is started,Buyers,2024,3.9,weeks,516.0,MKOR survey,9,"Reference date differs by year (1 Nov 2023, 1 Nov 2024, 7 Nov 2025, 6 Nov 2026); 2026 option '1-3 months' covers 5-8 weeks (no match before); conversion values differ slightly by year. MKOR: compare with caution"
+35,Planning horizon,Average weeks before BF reference date when the shopping list is started,Buyers,2025,3.7,weeks,573.0,MKOR survey,9,"Reference date differs by year (1 Nov 2023, 1 Nov 2024, 7 Nov 2025, 6 Nov 2026); 2026 option '1-3 months' covers 5-8 weeks (no match before); conversion values differ slightly by year. MKOR: compare with caution"
+36,Planning horizon,Average weeks before BF reference date when the shopping list is started,Buyers,2026,4.1,weeks,591.0,MKOR survey,9,"Reference date differs by year (1 Nov 2023, 1 Nov 2024, 7 Nov 2025, 6 Nov 2026); 2026 option '1-3 months' covers 5-8 weeks (no match before); conversion values differ slightly by year. MKOR: compare with caution"
+37,Planning horizon,Share who make a list in advance,Buyers (hot leads),2026,84.0,%,703.0,MKOR survey,7,Average 4.1 weeks ahead
+38,Planning horizon,Share with budget set in advance,Buyers (hot leads),2026,86.0,%,703.0,MKOR survey,7,"Average allocated budget 2,100 RON"
+39,Planning horizon,Share tracking products for a long time,Buyers (hot leads),2026,48.0,%,703.0,MKOR survey,7,Top motive
+40,Discount expectations,Average discount that would convince the undecided to buy,Undecided,2024,51.0,% of price,172.0,MKOR survey,10,Most frequent single value ~50%
+41,Discount expectations,Average discount that would convince the undecided to buy,Undecided,2025,54.0,% of price,178.0,MKOR survey,10,Most frequent single value ~50%
+42,Discount expectations,Average discount that would convince the undecided to buy,Undecided,2026,49.0,% of price,180.0,MKOR survey,10,Most frequent single value ~50%
+43,Discount expectations,Share of undecided naming a discount between 25% and 50%,Undecided,2026,72.0,%,180.0,MKOR survey,12,
+44,Discount expectations,Share of undecided naming exactly 50%,Undecided,2026,37.0,%,180.0,MKOR survey,12,Most frequent value
+45,Discount expectations,What would convince the undecided to buy at a discount,Large discount value (avg 49%),2026,61.0,%,236.0,MKOR survey,13,Multiple response
+46,Discount expectations,What would convince the undecided to buy at a discount,Offers on products of special interest,2026,50.0,%,236.0,MKOR survey,13,Multiple response
+47,Discount expectations,What would convince the undecided to buy at a discount,Immediate need for a product / service,2026,37.0,%,236.0,MKOR survey,13,Multiple response
+48,Discount expectations,What would convince the undecided to buy at a discount,Easy verification of the real discount,2026,36.0,%,236.0,MKOR survey,13,Multiple response
+49,Discount expectations,What would convince the undecided to buy at a discount,Free delivery,2026,23.0,%,236.0,MKOR survey,13,Multiple response
+50,Discount expectations,What would convince the undecided to buy at a discount,Reviews of other customers,2026,18.0,%,236.0,MKOR survey,13,Multiple response
+51,Discount expectations,What would convince the undecided to buy at a discount,"Flexible payment options (instalments, deferred payment)",2026,13.0,%,236.0,MKOR survey,13,Multiple response
+52,Barriers (non-buyers),Main reason for not buying at Black Friday,Distrust: do not believe discounts are real,2023,44.0,%,73.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+53,Barriers (non-buyers),Main reason for not buying at Black Friday,Distrust: do not believe discounts are real,2024,33.0,%,101.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+54,Barriers (non-buyers),Main reason for not buying at Black Friday,Distrust: do not believe discounts are real,2025,30.0,%,74.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+55,Barriers (non-buyers),Main reason for not buying at Black Friday,Distrust: do not believe discounts are real,2026,21.0,%,55.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+56,Barriers (non-buyers),Main reason for not buying at Black Friday,Tight budget: no money for such spending,2023,13.0,%,73.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+57,Barriers (non-buyers),Main reason for not buying at Black Friday,Tight budget: no money for such spending,2024,21.0,%,101.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+58,Barriers (non-buyers),Main reason for not buying at Black Friday,Tight budget: no money for such spending,2025,18.0,%,74.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+59,Barriers (non-buyers),Main reason for not buying at Black Friday,Tight budget: no money for such spending,2026,24.0,%,55.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+60,Barriers (non-buyers),Main reason for not buying at Black Friday,Caution: current economic situation,2023,12.0,%,73.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+61,Barriers (non-buyers),Main reason for not buying at Black Friday,Caution: current economic situation,2024,19.0,%,101.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+62,Barriers (non-buyers),Main reason for not buying at Black Friday,Caution: current economic situation,2025,11.0,%,74.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+63,Barriers (non-buyers),Main reason for not buying at Black Friday,Caution: current economic situation,2026,28.0,%,55.0,MKOR survey,17,"Small base; 2026 added option 'I prefer to buy when I need it' (10%), so shares are not fully comparable"
+64,Barriers (non-buyers),Main reason for not buying at Black Friday,Prefer to buy when needed (new in 2026),2026,10.0,%,55.0,MKOR survey,16,New option in 2026
+65,Barriers (non-buyers),Main reason for not buying at Black Friday,Do not need anything right now,2026,10.0,%,55.0,MKOR survey,16,
+66,Barriers (non-buyers),Main reason for not buying at Black Friday,No time to search for offers,2026,4.0,%,55.0,MKOR survey,16,
+67,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),Home appliances & electronics,2026,51.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+68,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),IT&C products,2026,37.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+69,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),Fashion,2026,30.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+70,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),"Cosmetics, perfumes & personal care",2026,27.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+71,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),Home & household products,2026,23.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+72,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),Furniture & decorations,2026,17.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+73,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),"Coffee, tea & beverages",2026,16.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+74,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),Toys & children's items,2026,14.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+75,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),Video games & gaming,2026,13.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+76,Categories,Products / services intended to buy at BF 2026 (top 10 of 26),"Books, stationery, music, films",2026,12.0,%,703.0,MKOR survey,19,Multiple response; avg 3.5 of 26 items (681 valid)
+77,Categories,Average number of products / services planned,All buyers,2026,3.5,items,681.0,MKOR survey,19,Out of 26 listed
+78,Channels,Planned shopping channel for BF,Online,2023,60.0,%,568.0,MKOR survey,21,
+79,Channels,Planned shopping channel for BF,Online,2024,55.0,%,568.0,MKOR survey,21,
+80,Channels,Planned shopping channel for BF,Online,2025,47.0,%,615.0,MKOR survey,21,
+81,Channels,Planned shopping channel for BF,Online,2026,60.0,%,703.0,MKOR survey,21,Gen Z online 35% to 57% (2025 to 2026) per MKOR slide note
+82,Channels,Planned shopping channel for BF,Hybrid (online and physical),2023,26.0,%,568.0,MKOR survey,21,
+83,Channels,Planned shopping channel for BF,Hybrid (online and physical),2024,29.0,%,568.0,MKOR survey,21,
+84,Channels,Planned shopping channel for BF,Hybrid (online and physical),2025,39.0,%,615.0,MKOR survey,21,
+85,Channels,Planned shopping channel for BF,Hybrid (online and physical),2026,29.0,%,703.0,MKOR survey,21,
+86,Channels,Planned shopping channel for BF,Physical only,2023,13.0,%,568.0,MKOR survey,21,
+87,Channels,Planned shopping channel for BF,Physical only,2024,14.0,%,568.0,MKOR survey,21,
+88,Channels,Planned shopping channel for BF,Physical only,2025,12.0,%,615.0,MKOR survey,21,
+89,Channels,Planned shopping channel for BF,Physical only,2026,8.0,%,703.0,MKOR survey,21,
+90,Channels,Planned shopping channel for BF,Have not thought about it yet,2023,2.0,%,568.0,MKOR survey,21,
+91,Channels,Planned shopping channel for BF,Have not thought about it yet,2024,2.0,%,568.0,MKOR survey,21,
+92,Channels,Planned shopping channel for BF,Have not thought about it yet,2025,1.0,%,615.0,MKOR survey,21,
+93,Channels,Planned shopping channel for BF,Have not thought about it yet,2026,3.0,%,703.0,MKOR survey,21,
+94,Channels,Online channels planned for BF 2026,"Marketplaces (eMAG, Amazon, SHEIN, Temu etc.)",2026,70.0,%,624.0,MKOR survey,20,Multiple response
+95,Channels,Online channels planned for BF 2026,Retailer / producer own websites,2026,61.0,%,624.0,MKOR survey,20,Multiple response
+96,Channels,Online channels planned for BF 2026,Retailer / producer mobile apps,2026,41.0,%,624.0,MKOR survey,20,Multiple response
+97,Channels,Online channels planned for BF 2026,Direct purchases in social networks,2026,12.0,%,624.0,MKOR survey,20,Multiple response
+98,Information sources,Where people learn about BF offers,"Retailer (app, website, newsletters, push)",2023,76.0,%,897.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+99,Information sources,Where people learn about BF offers,"Retailer (app, website, newsletters, push)",2024,72.0,%,864.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+100,Information sources,Where people learn about BF offers,"Retailer (app, website, newsletters, push)",2025,72.0,%,880.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+101,Information sources,Where people learn about BF offers,"Retailer (app, website, newsletters, push)",2026,74.0,%,930.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+102,Information sources,Where people learn about BF offers,"Social media (incl. live streaming, influencers, podcasts)",2023,60.0,%,897.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+103,Information sources,Where people learn about BF offers,"Social media (incl. live streaming, influencers, podcasts)",2024,57.0,%,864.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+104,Information sources,Where people learn about BF offers,"Social media (incl. live streaming, influencers, podcasts)",2025,58.0,%,880.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+105,Information sources,Where people learn about BF offers,"Social media (incl. live streaming, influencers, podcasts)",2026,57.0,%,930.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+106,Information sources,Where people learn about BF offers,"Advertising (TV, radio, outdoor, flyers)",2023,41.0,%,897.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+107,Information sources,Where people learn about BF offers,"Advertising (TV, radio, outdoor, flyers)",2024,46.0,%,864.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+108,Information sources,Where people learn about BF offers,"Advertising (TV, radio, outdoor, flyers)",2025,47.0,%,880.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+109,Information sources,Where people learn about BF offers,"Advertising (TV, radio, outdoor, flyers)",2026,45.0,%,930.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+110,Information sources,Where people learn about BF offers,"Other online (search engines, price comparison)",2023,36.0,%,897.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+111,Information sources,Where people learn about BF offers,"Other online (search engines, price comparison)",2024,38.0,%,864.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+112,Information sources,Where people learn about BF offers,"Other online (search engines, price comparison)",2025,45.0,%,880.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+113,Information sources,Where people learn about BF offers,"Other online (search engines, price comparison)",2026,39.0,%,930.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+114,Information sources,Where people learn about BF offers,Word of mouth,2023,16.0,%,897.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+115,Information sources,Where people learn about BF offers,Word of mouth,2024,15.0,%,864.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+116,Information sources,Where people learn about BF offers,Word of mouth,2025,23.0,%,880.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+117,Information sources,Where people learn about BF offers,Word of mouth,2026,20.0,%,930.0,MKOR survey,22,"Groups defined in MKOR Annex 3; 2026 added options: AI assistants, retailer push notifications, live-streaming"
+118,Information sources,Where people learn about BF offers,AI assistants (new in 2026),2026,6.0,%,930.0,MKOR survey,22,Share among those who seek information
+119,Budget,Average planned BF budget,Buyers with valid amount,2024,2179.0,RON,326.0,MKOR survey,25,"Self-reported; outliers <50 and >6,000 RON excluded; question wording changed in 2026 (see Annex 4). Change 2025: -6.1%; 2026: about +3%"
+120,Budget,Average planned BF budget,Buyers with valid amount,2025,2046.0,RON,489.0,MKOR survey,25,"Self-reported; outliers <50 and >6,000 RON excluded; question wording changed in 2026 (see Annex 4). Change 2025: -6.1%; 2026: about +3%"
+121,Budget,Average planned BF budget,Buyers with valid amount,2026,2100.0,RON,562.0,MKOR survey,25,"Self-reported; outliers <50 and >6,000 RON excluded; question wording changed in 2026 (see Annex 4). Change 2025: -6.1%; 2026: about +3%"
+122,Budget,What buyers considered when setting the BF budget,Available financial resources,2023,71.0,%,471.0,MKOR survey,26,Multiple response
+123,Budget,What buyers considered when setting the BF budget,Available financial resources,2024,67.0,%,471.0,MKOR survey,26,Multiple response
+124,Budget,What buyers considered when setting the BF budget,Available financial resources,2025,50.0,%,527.0,MKOR survey,26,Multiple response
+125,Budget,What buyers considered when setting the BF budget,Available financial resources,2026,50.0,%,689.0,MKOR survey,26,Multiple response
+126,Budget,What buyers considered when setting the BF budget,Price of products / services,2023,43.0,%,471.0,MKOR survey,26,Multiple response
+127,Budget,What buyers considered when setting the BF budget,Price of products / services,2024,34.0,%,471.0,MKOR survey,26,Multiple response
+128,Budget,What buyers considered when setting the BF budget,Price of products / services,2025,46.0,%,527.0,MKOR survey,26,Multiple response
+129,Budget,What buyers considered when setting the BF budget,Price of products / services,2026,43.0,%,689.0,MKOR survey,26,Multiple response
+130,Budget,What buyers considered when setting the BF budget,Current economic context,2023,19.0,%,471.0,MKOR survey,26,Multiple response
+131,Budget,What buyers considered when setting the BF budget,Current economic context,2024,18.0,%,471.0,MKOR survey,26,Multiple response
+132,Budget,What buyers considered when setting the BF budget,Current economic context,2025,28.0,%,527.0,MKOR survey,26,Multiple response
+133,Budget,What buyers considered when setting the BF budget,Current economic context,2026,25.0,%,689.0,MKOR survey,26,Multiple response
+134,Budget,What buyers considered when setting the BF budget,Possibility to pay in instalments,2023,19.0,%,471.0,MKOR survey,26,Multiple response
+135,Budget,What buyers considered when setting the BF budget,Possibility to pay in instalments,2024,14.0,%,471.0,MKOR survey,26,Multiple response
+136,Budget,What buyers considered when setting the BF budget,Possibility to pay in instalments,2025,21.0,%,527.0,MKOR survey,26,Multiple response
+137,Budget,What buyers considered when setting the BF budget,Possibility to pay in instalments,2026,25.0,%,689.0,MKOR survey,26,Multiple response
+138,Satisfaction,Satisfaction with overall BF shopping experience,Satisfied (6-7 on 7-point scale),2023,56.0,%,706.0,MKOR x NETOPIA study,28,Year = BF edition rated
+139,Satisfaction,Satisfaction with overall BF shopping experience,Satisfied (6-7 on 7-point scale),2024,56.0,%,766.0,MKOR x NETOPIA study,28,Year = BF edition rated
+140,Satisfaction,Satisfaction with overall BF shopping experience,Satisfied (6-7 on 7-point scale),2025,59.0,%,793.0,MKOR x NETOPIA study,28,Year = BF edition rated
+141,Satisfaction,Satisfaction with overall BF shopping experience,Neutral (4-5),2023,34.0,%,706.0,MKOR x NETOPIA study,28,Year = BF edition rated
+142,Satisfaction,Satisfaction with overall BF shopping experience,Neutral (4-5),2024,34.0,%,766.0,MKOR x NETOPIA study,28,Year = BF edition rated
+143,Satisfaction,Satisfaction with overall BF shopping experience,Neutral (4-5),2025,32.0,%,793.0,MKOR x NETOPIA study,28,Year = BF edition rated
+144,Satisfaction,Satisfaction with overall BF shopping experience,Dissatisfied (1-3),2023,10.0,%,706.0,MKOR x NETOPIA study,28,Year = BF edition rated
+145,Satisfaction,Satisfaction with overall BF shopping experience,Dissatisfied (1-3),2024,10.0,%,766.0,MKOR x NETOPIA study,28,Year = BF edition rated
+146,Satisfaction,Satisfaction with overall BF shopping experience,Dissatisfied (1-3),2025,10.0,%,793.0,MKOR x NETOPIA study,28,Year = BF edition rated
+147,Satisfaction,Mean satisfaction score,All BF buyers,2023,5.5,score (max 7),706.0,MKOR x NETOPIA study,28,
+148,Satisfaction,Mean satisfaction score,All BF buyers,2024,5.5,score (max 7),766.0,MKOR x NETOPIA study,28,
+149,Satisfaction,Mean satisfaction score,All BF buyers,2025,5.5,score (max 7),793.0,MKOR x NETOPIA study,28,
+150,Satisfaction,Reasons for dissatisfaction,Out of stock on desired products,2023,50.0,%,68.0,MKOR x NETOPIA study,29,Very small base: indicative only
+151,Satisfaction,Reasons for dissatisfaction,Out of stock on desired products,2024,43.0,%,80.0,MKOR x NETOPIA study,29,Very small base: indicative only
+152,Satisfaction,Reasons for dissatisfaction,Out of stock on desired products,2025,46.0,%,76.0,MKOR x NETOPIA study,29,Very small base: indicative only
+153,Satisfaction,Reasons for dissatisfaction,Long delivery waiting time,2023,27.0,%,68.0,MKOR x NETOPIA study,29,Very small base: indicative only
+154,Satisfaction,Reasons for dissatisfaction,Long delivery waiting time,2024,32.0,%,80.0,MKOR x NETOPIA study,29,Very small base: indicative only
+155,Satisfaction,Reasons for dissatisfaction,Long delivery waiting time,2025,20.0,%,76.0,MKOR x NETOPIA study,29,Very small base: indicative only
+156,Satisfaction,Reasons for dissatisfaction,Technical problems with website / app,2023,30.0,%,68.0,MKOR x NETOPIA study,29,Very small base: indicative only
+157,Satisfaction,Reasons for dissatisfaction,Technical problems with website / app,2024,20.0,%,80.0,MKOR x NETOPIA study,29,Very small base: indicative only
+158,Satisfaction,Reasons for dissatisfaction,Technical problems with website / app,2025,23.0,%,76.0,MKOR x NETOPIA study,29,Very small base: indicative only
+159,Satisfaction,Reasons for dissatisfaction,Discount smaller than expected (new option in 2026 survey),2026,60.0,%,76.0,MKOR x NETOPIA study,29,"Asked about BF 2025 experience; new answer option, top reason; indicative (small base)"
+160,Satisfaction,Reasons for dissatisfaction,Delivery cost too high (new option in 2026 survey),2026,11.0,%,76.0,MKOR x NETOPIA study,29,New answer option; indicative
+161,Expectations for BF,What customers want to be different at BF this year,Substantial and / or authentic discounts,2026,77.0,%,768.0,MKOR survey,37,Multiple response
+162,Expectations for BF,What customers want to be different at BF this year,Sufficient stock,2026,33.0,%,768.0,MKOR survey,37,Multiple response
+163,Expectations for BF,What customers want to be different at BF this year,Wide range of products,2026,23.0,%,768.0,MKOR survey,37,Multiple response
+164,Expectations for BF,What customers want to be different at BF this year,"Prompt, free or low-cost delivery",2026,19.0,%,768.0,MKOR survey,37,Multiple response
+165,Expectations for BF,What customers want to be different at BF this year,Product quality,2026,15.0,%,768.0,MKOR survey,37,Multiple response
+166,Expectations for BF,What customers want to be different at BF this year,Platform functionality,2026,13.0,%,768.0,MKOR survey,37,Multiple response
+167,Expectations for BF,What customers want to be different at BF this year,Prompt and transparent communication of offers,2026,7.0,%,768.0,MKOR survey,37,Multiple response
+168,Payments (NETOPIA),Card transactions on BF day vs. an ordinary banking day (ordinary day = 1),NETOPIA card payments,2023,1.9,x,,NETOPIA Payments (via MKOR),31,NETOPIA does not cover all merchants; ordinary-day volume also grows
+169,Payments (NETOPIA),Card transactions on BF day vs. an ordinary banking day (ordinary day = 1),NETOPIA card payments,2024,1.5,x,,NETOPIA Payments (via MKOR),31,NETOPIA does not cover all merchants; ordinary-day volume also grows
+170,Payments (NETOPIA),Card transactions on BF day vs. an ordinary banking day (ordinary day = 1),NETOPIA card payments,2025,1.4,x,,NETOPIA Payments (via MKOR),31,NETOPIA does not cover all merchants; ordinary-day volume also grows
+171,Payments (NETOPIA),"Card transactions index, 14 days before BF = 100 (daily average)",14 days before,2025,100.0,index,,NETOPIA Payments (via MKOR),32,Reference level
+172,Payments (NETOPIA),"Card transactions index, 14 days before BF = 100 (daily average)",BF day (7 Nov 2025),2025,151.6,index,,NETOPIA Payments (via MKOR),32,+51.6% vs reference
+173,Payments (NETOPIA),"Card transactions index, 14 days before BF = 100 (daily average)",14 days after BF,2025,133.5,index,,NETOPIA Payments (via MKOR),32,+33.5% vs reference
+174,Payments (NETOPIA),Share of card payments in the 29-day window around BF 2025,14 days before,2025,41.0,%,,NETOPIA Payments (via MKOR),32,
+175,Payments (NETOPIA),Share of card payments in the 29-day window around BF 2025,BF day,2025,4.0,%,,NETOPIA Payments (via MKOR),32,
+176,Payments (NETOPIA),Share of card payments in the 29-day window around BF 2025,14 days after,2025,55.0,%,,NETOPIA Payments (via MKOR),32,
+177,Payments (NETOPIA),YoY change BF day 2024 to 2025,Total processed volume (EUR),2025,19.0,% change,,NETOPIA Payments (via MKOR),33,
+178,Payments (NETOPIA),YoY change BF day 2024 to 2025,Number of transactions,2025,14.0,% change,,NETOPIA Payments (via MKOR),33,
+179,Payments (NETOPIA),YoY change BF day 2024 to 2025,Active merchants,2025,8.0,% change,,NETOPIA Payments (via MKOR),33,
+180,Payments (NETOPIA),Peak hour on BF day,NETOPIA PSP + TSP,2025,11.0,hour of day (11:00),,NETOPIA Payments (via MKOR),33,
+181,Payments (NETOPIA),Share of BF-day transactions processed 00:00-00:59,NETOPIA PSP,2025,1.7,%,,NETOPIA Payments (via MKOR),33,"Offers may start at midnight, but volume peaks late morning"
+182,Payments (NETOPIA),Average transaction value on BF day,NETOPIA,2025,400.0,RON,,NETOPIA Payments (via MKOR),34,+60% vs annual average; not comparable to per-person survey budget
+183,Payments (NETOPIA),"Intent to buy online or hybrid, share of all respondents",MKOR,2024,47.8,%,1000.0,MKOR x NETOPIA study,30,"478 of 1,000"
+184,Payments (NETOPIA),"Intent to buy online or hybrid, share of all respondents",MKOR,2025,53.5,%,1000.0,MKOR x NETOPIA study,30,"535 of 1,000; +5.7 pp, +11.9% relative"
+185,Payments (NETOPIA),"Online card transactions on BF day, YoY",NETOPIA,2025,14.0,% change,,NETOPIA Payments (via MKOR),30,"Compared by MKOR as direction of trend, not a direct relationship"
