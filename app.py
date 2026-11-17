@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 st.set_page_config(
-    page_title="The Black Friday Edit",
+    page_title="The Black Friday Edition",
     page_icon="✦",
     layout="wide",
     initial_sidebar_state="expanded",
