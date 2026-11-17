@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 st.set_page_config(
-    page_title="The Black Friday Edition",
+    page_title="The Black Friday Edit",
     page_icon="✦",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -165,7 +165,7 @@ M_WINDOW = "Share of card payments in the 29-day window around BF 2025"
 PAGES = {
     "Cover": {
         "chapter": "SPECIAL DATA EDITION",
-        "title": "THE BLACK FRIDAY EDITION",
+        "title": "THE BLACK FRIDAY EDIT",
         "subtitle": "Are Romanians shopping smarter, or simply shopping more?",
         "intro": "A data-led investigation into the habits, expectations and decisions behind Romania's biggest shopping event.",
     },
@@ -181,7 +181,6 @@ PAGES = {
                  desc="Afterwards, the share who say they actually bought rises every year: 71% in 2023, 77% in 2024 and 79% in 2025. "
                       "It is measured in the following year's wave on a different base from the intention question, so read it alongside intention rather than as an exact conversion."),
         ],
-        "take": "Purchase intention and reported purchase are different measures. Read them as two parts of the story, not as a direct conversion funnel.",
     },
     "02 · Shopping Habits": {
         "chapter": "02 / THE SHOPPING HABITS",
@@ -196,7 +195,6 @@ PAGES = {
                  desc="Available financial resources is still the top consideration when setting a budget, but it falls from 71% in 2023 to 50% in 2025 and 2026. "
                       "The economic context (19% to 25%) and the option to pay in instalments (19% to 25%) weigh more, while price stays in the 34–46% range."),
         ],
-        "take": "Planning horizon, list-making and budgeting describe different behaviours. Keep weeks, percentages and RON in separate visualisations.",
     },
     "03 · The Wishlist": {
         "chapter": "03 / THE WISHLIST",
@@ -207,7 +205,6 @@ PAGES = {
                  desc="Home appliances and electronics lead the 2026 wishlist at 51%, followed by IT&C products (37%) and fashion (30%). "
                       "Beyond the top three, interest spreads across everyday categories from cosmetics (27%) to books, stationery, music and films (12%). Respondents could pick several categories."),
         ],
-        "take": "The category question allows multiple responses. Percentages are not expected to total 100%. The category ranking is for 2026 only.",
     },
     "04 · The Discount Dilemma": {
         "chapter": "04 / THE OPINION PIECE",
@@ -225,7 +222,6 @@ PAGES = {
             dict(metric=M_DIFF, kind="hbar", height=420,
                  desc="Shoppers' wish list for this year is led by substantial and/or authentic discounts, named by 77%, more than twice the next ask, sufficient stock (33%). Everything else, from range to platform functionality, trails far behind."),
         ],
-        "take": "The barriers question is answered by non-buyers, while discount expectations concern undecided shoppers or the wider buyer base. Always show the question base and source note.",
     },
     "05 · The Digital Life": {
         "chapter": "05 / THE DIGITAL LIFE",
@@ -240,7 +236,6 @@ PAGES = {
             dict(metric=M_ONLINE, kind="hbar", height=300,
                  desc="Within online shopping, marketplaces such as eMAG, Amazon, SHEIN and Temu are the top planned channel at 70%, ahead of retailers' own websites (61%) and mobile apps (41%). Buying directly in social networks remains marginal at 12%."),
         ],
-        "take": "The 2026 online-channel breakdown is a separate question from the overall shopping-channel split. Multiple-response answers may exceed 100%.",
     },
     "06 · Customer Experience": {
         "chapter": "06 / THE CUSTOMER EXPERIENCE",
@@ -253,7 +248,6 @@ PAGES = {
                  desc="Out-of-stock products are the leading complaint in 2023–2025 (43–50%), followed by technical problems and long delivery times. "
                       "The 2026 survey adds new options, and 'discount smaller than expected' tops the list at 60%. Bases are small, so treat these as indicative."),
         ],
-        "take": "Satisfaction series currently ends in 2025. Some dissatisfaction options or questions may have changed over time; use the notes and bases before making trend claims.",
     },
     "07 · The Payment Pulse": {
         "chapter": "07 / THE PAYMENT PULSE",
@@ -269,14 +263,12 @@ PAGES = {
             dict(metric=M_YOY, kind="hbar", height=300,
                  desc="Compared with 2024, BF day processed 19% more volume in euros and 14% more transactions, with 8% more active merchants. Value grew faster than transaction count, and transaction count faster than the merchant base."),
         ],
-        "take": "NETOPIA metrics describe transactions processed through NETOPIA, not the entire Romanian market. Multipliers, index values, RON and percentage changes must remain separate.",
     },
     "08 · The Final Edit": {
         "chapter": "08 / THE FINAL EDIT",
         "title": "So, are Romanians shopping smarter?",
         "subtitle": "Three lenses on the changing Black Friday shopper.",
         "figures": [],
-        "take": "The dataset suggests a shopper who plans ahead, weighs the value of discounts and increasingly uses digital channels. These are interpretations of separate survey measures, not proof of individual-level behaviour.",
     },
 }
 
@@ -598,7 +590,7 @@ def breadcrumb(page):
     with c2:
         st.markdown(f'<div class="crumb-rest">›&nbsp; {page["chapter"]}</div>', unsafe_allow_html=True)
     with c3:
-        st.markdown('<div class="crumb-rest" style="text-align:right">THE BLACK FRIDAY EDITION</div>', unsafe_allow_html=True)
+        st.markdown('<div class="crumb-rest" style="text-align:right">THE BLACK FRIDAY EDIT</div>', unsafe_allow_html=True)
 
 def author_footer():
     st.markdown(
@@ -655,14 +647,14 @@ def render_figure(n, spec, page_no):
     st.write("")
 
 # ── Navigation ──────────────────────────────────────────────────────────────
-st.sidebar.markdown('<div class="eyebrow">THE BLACK FRIDAY EDITION</div>', unsafe_allow_html=True)
+st.sidebar.markdown('<div class="eyebrow">THE BLACK FRIDAY EDIT</div>', unsafe_allow_html=True)
 selected = st.sidebar.radio("READ THE ISSUE", list(PAGES.keys()), key="nav")
 st.markdown('<div id="top-anchor" style="scroll-margin-top:5rem"></div><a class="to-top" href="#top-anchor" title="Back to top">↑</a>', unsafe_allow_html=True)
 page = PAGES[selected]
 
 if selected == "Cover":
     st.markdown('<div class="eyebrow">ROMANIA · 2023–2026 · SPECIAL DATA EDITION</div>', unsafe_allow_html=True)
-    st.markdown('<div class="masthead">THE BLACK<br>FRIDAY EDITION</div>', unsafe_allow_html=True)
+    st.markdown('<div class="masthead">THE BLACK<br>FRIDAY EDIT</div>', unsafe_allow_html=True)
     st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
     st.markdown(f'<h2 style="font-size:2.1rem; max-width:850px; line-height:1.15">{page["subtitle"]}</h2>', unsafe_allow_html=True)
     st.markdown(f'<p class="deck">{page["intro"]}</p>', unsafe_allow_html=True)
@@ -698,11 +690,6 @@ else:
 
     for n, spec in enumerate(page["figures"], 1):
         render_figure(n, spec, page_no)
-
-    if page.get("take"):
-        st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
-        st.markdown('<div class="eyebrow">THE EDITORIAL TAKE</div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="pullquote">{page["take"]}</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="rule"></div>', unsafe_allow_html=True)
     page_nav(selected)
